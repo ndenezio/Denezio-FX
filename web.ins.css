@@ -1,0 +1,366 @@
+/* UTILITIES */
+
+@import url('https://fonts.googleapis.com/css2?family=Diplomata+SC&family=Fascinate&family=League+Gothic&family=Oswald:wght@200&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #452c63;
+    font-family: 'League Gothic', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+
+/* NAV  */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2%;
+    background-color: #720e9e;
+    color: #fff;
+}
+.nav-links {
+    display: flex;
+    flex-direction: row;
+}
+.nav-links a {
+    display: flex;
+    color: #fff;
+    font-size: 17px;
+    transition: all .5s;
+    margin: 1rem;
+}
+.nav-links a:hover {
+    color: #fff;
+    background-color: #800080;
+    border-radius: 5px;
+    transition: all .5s;
+}
+/* LOGO NAV */
+.logo a {
+    font-size: 32px;
+    color: #fff;
+    margin: auto;
+}
+/* CONTENEDOR DE PRODUCTOS */
+.products_container {
+    color: #fff;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 2%;
+}
+.products_container p.pedals, p.amps {
+    font-size: 40px;
+    text-shadow: 2px 2px 3px#fd3213;
+    margin: 2% auto;
+}
+.products_container a{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    background-color: #fd3213;
+    border-radius: 6%;
+    width: 15%;
+}
+/* LETRA TITULO PEDALES Y AMPLIFICADORES */
+.pedals {
+    margin-top: 2% auto;
+    letter-spacing: 2px;
+}
+.amps {
+    margin: 2% auto;
+    letter-spacing: 2px;
+    margin-top: 2rem auto;
+    padding-top: 9%;
+
+}
+/* PRODUCTOS CON SU TAMAÑO */
+.flanger, .over, .multi, .tube, .muff {
+    display: flex;
+    width: 50%;
+    margin: 2% auto;
+    margin-top: 5% auto;
+    border-radius: 3px;
+    border: 1px solid #fd3213;
+}
+.vox, .fender, .boogie, .marshall {
+    display: flex;
+    width: 50%;
+    margin: 5% auto;
+    border-radius: 3px;
+    border: 1px solid #fd3213;
+}
+/* CONTENEDOR DE IMAGEN HOME */
+.pedals_container {
+    display: flex;
+    justify-content: center;
+}
+.pedals_container img{
+    width: 100%;
+    margin: auto;
+    height: 100% auto;
+    padding: .8%;
+}
+/* CONTENEDOR INFO E IMAGEN SECCION CONTACT */
+.info_contact {
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+    text-shadow: 2px 2px 3px#fd3213;
+}
+.info_contact a {
+    display: flex;
+    color: #fff;
+    font-size: 20px;
+    justify-content: center;
+}
+.info_contact img {
+    width: 95%;
+    margin: auto;
+    margin-top: 2%;
+}
+.info_contact p {
+    margin: auto;
+    margin-top: 2rem;
+    font-size: 20px;
+}
+.jcm_desk {
+    display: none;
+}
+/* PARRAFO INFORMACION ABOUT US */
+.info {
+    text-align: center;
+    color: #fff;
+    padding: 2%;
+    justify-content: center;
+}
+.info_desktop {
+    display: none;
+}
+/* DERECHOS RESERVADOS */
+.rights {
+        text-align: center;
+        color: #fff;
+        margin: auto;
+        margin-top: 4rem;
+}
+/* IMAGEN BACK ABOUT US */
+.about {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding: 2%;
+}
+.about_desktop {
+    display: none;
+}
+
+/* PAGINA DE EJEMPLO PRESENTACION DE PRODUCTO (producto, link de compra, precio, titulo y caracteristicas en ese orden) */
+.product_example {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 2%;
+    margin: auto;
+    flex-direction: column;
+}
+.product_example a {
+    color: #fff;
+    background-color: #fd3213;
+    text-align: center;
+    border-radius: 3px;
+    margin: auto;
+    margin-top: 5%;
+    width: 50%;
+    font-size: 20px;
+}
+.price {
+    display: flex;
+    color: #fff;
+    text-align: center;
+    font-size: 200%;
+    margin: 1% auto;
+}
+.mesa {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    margin: auto;
+    font-size: 200%;
+    text-shadow: 2px 2px 3px#fd3213;
+    padding: 1.5rem;
+}
+.caracts {
+    color: #fff;
+    margin: auto;
+    padding: 8%;
+}
+
+.amp_container_desktop img{
+    display: none;
+}
+
+@media (min-width: 769px) {
+    /* LOGO Y NAV */
+    .logo a {
+        display: flex;
+        font-size: 58px;
+        color: #fff;
+        margin: auto;
+        margin-left: 2rem;
+    }
+    .nav-links a {
+        display: flex;
+        color: #fff;
+        font-size: 30px;
+        transition: all .5s;
+        letter-spacing: 2px;
+        margin: 2rem;
+    }
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+    }
+    .navbar {
+        display: flex;
+        padding: 0%;
+    }
+    /* CONTENEDOR DE IMAGEN DESKTOP */
+    .pedals_container img{
+        width: 100vw;
+        display: none;
+    }
+    .products_container {
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+    }
+    .amp_container_desktop img {
+        display: flex;
+        margin: auto;
+        /* object-fit: cover; */
+        padding: .2%;
+        width: 75%;
+    }
+    /* ABOUT MOBILE SIN DISPLAY PARA QUE NO INTERFIERA EN DESKTOP */
+    .about {
+        display: none;
+    }
+    /* TEXTO INFORMACION ABOUT US */
+    .about_desktop {
+        display: flex;
+        margin: auto;
+        margin-top: -.1rem;
+        padding: 2%;
+        width: 55%;
+    }
+    /* ABOUT MOBILE SIN DISPLAY PARA QUE NO INTERFIERA EN DESKTOP */
+    .info {
+        display: none;
+    }
+    /* CONTENEDOR IMAGEN ABOUT US */
+    .info_desktop {
+        display: block;
+        font-size: 30px;
+        color: #fff;
+        text-align: center;
+    }
+    /* DERECHOS RESERVADOS */
+    .rights {
+        font-size: 30px;
+        margin: auto;
+    }
+    /* INFO CONTACTO MOBILE SIN DISPLAY PARA QUE NO INTERFIERA */
+    .info_contact img {
+        display: none;
+    }
+    /* INFORMACION DE CONTACTO */
+    .jcm_desk {
+        display: flex;
+        margin: auto;
+    }
+    /* INFORMACION DE CONTACTO */
+    .info_contact p{
+        margin-top: 20px;
+        font-size: 40px;
+        color: #fff;
+    }
+    /* LINK DE CONTACTO */
+    .info_contact a {
+        font-size: 40px;
+        color: #fff;
+        margin: 0;
+    }
+    /* CONTENEDOR DE PRODUCTOS */
+    .products_container {
+        color: #fff;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        font-size: 30px;
+        width: 60%;
+        margin-left: 20%;
+        margin-bottom: 10px;
+    }
+    .products_container p.pedals, p.amps {
+        font-size: 40px;
+        text-shadow: 2px 2px 3px#fd3213;
+    }
+    .products_container a{
+        color: #fff;
+        background-color: #fd3213;
+        border-radius: 3px;
+        width: 130px;
+        
+    }
+/* PAGINA DE EJEMPLO PRESENTACION DE PRODUCTO (producto, link de compra, precio, titulo y caracteristicas en ese orden) */
+    .product_example {
+        display: flex;
+        width: 60%;
+        margin: auto;
+        
+    }
+    .product_example a {
+        color: #fff;
+        background-color: #fd3213;
+        text-align: center;
+        border-radius: 3px;
+        margin: auto;
+        width: 50%;
+        font-size: 40px;
+        margin-top: 2rem;
+    }
+    .price {
+        color: #fff;
+        text-align: center;
+        font-size: 40px;
+        margin: auto;
+    }
+    .mesa {
+        display: flex;
+        color: #fff;
+        text-align: center;
+        margin: auto;
+        font-size: 50px;
+        text-shadow: 2px 2px 3px#fd3213;
+
+    }
+    .caracts {
+        color: #fff;
+        margin-top: 20px;
+        font-size: 30px;
+    }
+}
