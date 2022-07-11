@@ -253,7 +253,7 @@ li {
         margin: auto;
         /* object-fit: cover; */
         padding: .2%;
-        width: 75%;
+        width: 100%;
     }
     /* ABOUT MOBILE SIN DISPLAY PARA QUE NO INTERFIERA EN DESKTOP */
     .about {
